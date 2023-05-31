@@ -1,0 +1,71 @@
+:root {
+  --fuenteTitulo: 'Libre Franklin', sans-serif;
+  --fuenteTextos: 'Open Sans', sans-serif;
+
+  --colorPrincipal: #F58634;
+  --colorSecundario: #363435;
+  --colorTerciario: #F2CB05;
+
+  --negro: #111111;
+  --blanco: #FFFFFF;
+  --gris: #F2F2F2;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuenteTextos);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: var(--gris);
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+[class*="__contenedor"] {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+[class*="__btn"] {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--colorSecundario);
+  background-color: var(--colorPrincipal);
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}

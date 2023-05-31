@@ -1,0 +1,12 @@
+:root {
+  --fuenteTitulo: 'Libre Franklin', sans-serif;
+  --fuenteTextos: 'Open Sans', sans-serif;
+
+  --colorPrincipal: #F58634;
+  --colorSecundario: #363435;
+  --colorTerciario: #F2CB05;
+
+  --negro: #111111;
+  --blanco: #FFFFFF;
+  --gris: #F2F2F2;
+}
