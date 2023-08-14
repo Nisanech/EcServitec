@@ -2,13 +2,10 @@
   --fuenteTitulo: 'Libre Franklin', sans-serif;
   --fuenteTextos: 'Open Sans', sans-serif;
 
-  --colorPrincipal: #F58634;
-  --colorSecundario: #363435;
-  --colorTerciario: #F2CB05;
-
-  --negro: #111111;
+  --naranja: #F58634;
+  --negro: #515151;
   --blanco: #FFFFFF;
-  --gris: #F2F2F2;
+  --gris: #7D7D7D;
 }
 
 html {
@@ -62,90 +59,84 @@ img {
   display: inline-block;
   width: 100%;
   padding: .5rem;
-  border-radius: .5rem;
-  border: 1px solid var(--colorSecundario);
-  background-color: var(--colorPrincipal);
-  color: var(--blanco);
+  border-radius: 1.2rem;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-top: .5rem;
 }
 
-/** Header **/
-.header {
-  padding: 5rem 0;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--blanco);
-}
-
-.header .contenido-header {
-  position: relative;
-}
-
-/** Barra **/
+/** Barra Header **/
 .barra {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--naranja);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-@media (min-width: 768px) {
+.barra-contacto {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.barra-contacto p {
+  color: var(--blanco);
+  font-family: var(--fuenteTextos);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.barra-contacto .hidden {
+  visibility: hidden;
+}
+
+.barra-telefono {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.barra-telefono img {
+  width: 2rem;
+}
+
+.barra-redes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 20%;
+}
+
+@media (min-width: 768px) { 
   .barra {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1rem 3rem;
   }
-}
-
-.barra .logo {
-  width: 50%;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .barra .logo {
-    width: 30rem;
-    margin: 0;
+  
+  .barra-contacto {
+    justify-content: space-between;
+    width: 55%;
+  }
+  
+  .barra-contacto p {
+    font-size: 18px;
+  }
+  
+  .barra-contacto .hidden {
+    visibility: visible;
+  }
+  
+  .barra-telefono img {
+    width: 2rem;
+  }
+  
+  .barra-redes {
+    gap: 5rem;
+    width: 50%;
   }
 }
 
 /** Navegacion **/
-.navegacion {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
 
-@media (min-width: 768px) {
-  .navegacion {
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 0;
-    justify-content: space-between;
-  }
-}
-
-.navegacion a {
-  text-align: center;
-  color: var(--negro);
-  font-size: 1.65rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
-}
-
-@media (min-width: 768px) {
-  .navegacion a {
-    margin-bottom: 0;
-  }
-}
-
-.navegacion a:hover {
-  color: #C39C63;
-}
-
-.navegacion a.activo {
-  color: #C39C63;
-}
