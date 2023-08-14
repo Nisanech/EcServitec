@@ -6,6 +6,7 @@
   --negro: #515151;
   --blanco: #FFFFFF;
   --gris: #7D7D7D;
+  --grisClaro: #F0F0F0;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
   font-family: var(--fuenteTextos);
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: var(--gris);
+  background-color: var(--blanco);
 }
 
 h1,
@@ -48,10 +49,18 @@ img {
     display: block;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+  color: var(--negro);
+  font-family: var(--fuenteTextos);
+  font-size: 16px;
+}
+
 [class*="contenedor"] {
-  max-width: 120rem;
+  width: 95%;
+  max-width: 1200px;
   margin: 0 auto;
-  width: 90%;
 }
 
 [class*="btn"] {
