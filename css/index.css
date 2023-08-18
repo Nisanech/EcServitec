@@ -112,7 +112,6 @@
 
 .realiza-tu-pedido-cards {
   margin-top: 3rem;
-  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   align-items: start;
@@ -184,5 +183,52 @@
     font-size: 16px;
     text-align: center;
     margin-top: 1.5rem;
+  }
+}
+
+.realiza-pedido-btn {
+  background-color: var(--blanco);
+  color: var(--naranja);
+  height: 4rem;
+  margin: 0;
+  border: 1px solid var(--naranja);
+}
+
+.realiza-pedido-btn:hover {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  border: 1px solid var(--blanco);
+}
+
+.realiza-siguenos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.siguenos {
+  margin-top: 2rem;
+}
+
+.siguenos p {
+  color: var(--blanco);
+}
+
+.siguenos-redes {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.siguenos-redes img {
+  width: 4rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+  .realiza-siguenos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
   }
 }
