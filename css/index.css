@@ -309,3 +309,60 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/** Valores **/
+.nuestros-valores {
+  background-color: var(--blanco);
+  width: 100%;
+}
+
+.nuestros-valores-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.valor-card {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.valor-card img {
+  width: 12rem;
+}
+
+.valor-card-txt h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.valor-card-txt p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.valor-card:nth-child(1),
+.valor-card:nth-child(3) {
+  background-color: #F0F0F0;
+}
+
+.valor-card:nth-child(2) {
+  background-color: #DEDEDE;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 1024px) { 
+  .nuestros-valores-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .valor-card {
+    flex-direction: column;
+  }
+
+  .valor-card:nth-child(2) {
+    flex-direction: column;
+  }
+}
