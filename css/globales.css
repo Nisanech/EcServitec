@@ -251,3 +251,31 @@ p {
 .swiper-pagination-bullet-active {
   background-color: var(--blanco);
 }
+
+/** Footer **/
+.footer {
+  width: 100%;
+}
+
+.footer-contacto {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+
+.footer-telefonos h4 {
+  margin: 0;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.telefonos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.telefonos p {
+  color: var(--blanco);
+}
