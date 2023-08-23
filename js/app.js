@@ -15,4 +15,27 @@ let swiper = new Swiper(".swiper", {
     delay: 6000
   },
   loop: true
-}) 
+})
+
+//- Cambiar banner footer
+function cambiarBannerFooter() {
+  //* Detecta el ancho de la pantalla 
+  const anchoPantalla = window.innerWidth
+
+  //* Selecciona el elemento que contiene la imagen 
+  const bannerImg = document.getElementById('bannerFooter')
+
+  // console.log(anchoPantalla, bannerImg);
+
+  if (anchoPantalla < 768) {
+    bannerImg.src = 'assets/img/banners/banner-footer-movil.jpg'
+  } else {
+    bannerImg.src = "assets/img/banners/banner-footer.jpg";
+  }
+} 
+
+//* Llama a la función cuando se carga la página 
+window.onload = cambiarBannerFooter
+
+//* Llama a la función cuando cambia el tamaño de la ventana 
+window.addEventListener('resize', cambiarBannerFooter)
