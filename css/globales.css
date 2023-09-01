@@ -310,6 +310,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 2rem 0;
   background-color: var(--negro);
 }
@@ -317,4 +318,5 @@ p {
 .copy p,
 .copy a {
   color: var(--blanco);
+  text-align: center;
 }

@@ -24,11 +24,13 @@ function cambiarBannerFooter() {
 
   //* Selecciona el elemento que contiene la imagen 
   const bannerImg = document.getElementById('bannerFooter')
+  const bannerImgInt = document.getElementById("bannerFooterInt");
 
   // console.log(anchoPantalla, bannerImg);
 
   if (anchoPantalla < 768) {
     bannerImg.src = 'assets/img/banners/banner-footer-movil.jpg'
+    bannerImgInt.src = '../assets/img/banners/banner-footer-movil.jpg'
   } else {
     bannerImg.src = "assets/img/banners/banner-footer.jpg";
   }
