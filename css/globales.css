@@ -255,6 +255,7 @@ p {
 /** Footer **/
 .footer {
   width: 100%;
+  background-color: #000000;
 }
 
 .footer-contacto {
@@ -264,7 +265,9 @@ p {
   padding: 2rem;
 }
 
-.footer-telefonos h4 {
+.footer-telefonos h4,
+.footer-ubicacion h4,
+.footer-correos h4 {
   margin: 0;
   color: var(--blanco);
   text-align: center;
@@ -276,6 +279,42 @@ p {
   margin-top: 1rem;
 }
 
-.telefonos p {
+.telefonos p,
+.direccion p,
+.correos p {
+  color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+  .footer-contacto {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .footer-ubicacion,
+  .footer-correos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) { 
+  .footer-contacto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--negro);
+}
+
+.copy p,
+.copy a {
   color: var(--blanco);
 }
