@@ -12,34 +12,100 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!--- Libería SwiperJS --->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
 
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/globales.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/productos.css">
 </head>
 <body>
+  <!--* Barra *-->
+  <div class="barra">
+    <!-- Contacto -->
+    <div class="barra-contacto">
+      <div class="barra-telefono">
+        <img
+          src="../assets/svg/generales/phone-icono.svg"
+          alt="Icono telefono"
+        />
+
+        <p>315 346 0098</p>
+      </div>
+
+      <p class="hidden">ventas@ecservitec.com</p>
+    </div>
+
+    <!-- Redes -->
+    <div class="barra-redes">
+      <img
+        src="../assets/svg/redes-sociales/facebook-logo.svg"
+        alt="Logo Facebook"
+      />
+
+      <img
+        src="../assets/svg/redes-sociales/instagram-logo.svg"
+        alt="Logo Instagram"
+      />
+
+      <img
+        src="../assets/svg/redes-sociales/youtube-logo.svg"
+        alt="Logo YouTube"
+      />
+    </div>
+  </div>
+
   <!--* Header *-->
   <header class="header">
-    <div class="contenido-header contenedor">
-      
-      <!--* Logo *-->
-      <div class="barra">
-        <div class="logo">
-          <img src="../img/Logo.jpg" alt="Logo">
-        </div>
-
-        <!--* Navegacion *-->
-        <nav class="navegacion">
-          <a href="../index.html">Inicio</a>
-          <a href="tutoriales.html">Tutoriales</a>
-          <a href="productos.html" class="activo">Productos</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </div>
+    <!--* Logo *-->
+    <div class="header-logo">
+      <img src="../assets/img/Logo.jpg" alt="Logo" />
     </div>
+
+    <!--* Navegacion *-->
+    <nav class="header-navegacion">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="./pages/productos.html">Productos</a>
+      <a href="./pages/tutoriales.html">Tutoiales</a>
+      <a href="./pages/contacto.html">Contacto</a>
+      <a href="#realizaPedido" class="enlace-pedido">Realiza tu pedido</a>
+    </nav>
   </header>
+
+  <!--* Hero *-->
+  <section class="swiper hero">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-1.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-2.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-3.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+    </ul>
+  </section>
+
+  <!--- Libería Swiper --->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <!-- App js -->
   <script src="../js/app.js"></script>
