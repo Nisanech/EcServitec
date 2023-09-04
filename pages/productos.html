@@ -12,34 +12,352 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!--- Libería SwiperJS --->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="../css/normalize.css">
 
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/globales.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/productos.css">
 </head>
 <body>
+  <!--* Barra *-->
+  <div class="barra">
+    <!-- Contacto -->
+    <div class="barra-contacto">
+      <div class="barra-telefono">
+        <img
+          src="../assets/svg/generales/phone-icono.svg"
+          alt="Icono telefono"
+        />
+
+        <p>315 346 0098</p>
+      </div>
+
+      <p class="hidden">ventas@ecservitec.com</p>
+    </div>
+
+    <!-- Redes -->
+    <div class="barra-redes">
+      <img
+        src="../assets/svg/redes-sociales/facebook-logo.svg"
+        alt="Logo Facebook"
+      />
+
+      <img
+        src="../assets/svg/redes-sociales/instagram-logo.svg"
+        alt="Logo Instagram"
+      />
+
+      <img
+        src="../assets/svg/redes-sociales/youtube-logo.svg"
+        alt="Logo YouTube"
+      />
+    </div>
+  </div>
+
   <!--* Header *-->
   <header class="header">
-    <div class="contenido-header contenedor">
-      
-      <!--* Logo *-->
-      <div class="barra">
-        <div class="logo">
-          <img src="../img/Logo.jpg" alt="Logo">
-        </div>
+    <!--* Logo *-->
+    <div class="header-logo">
+      <img src="../assets/img/Logo.jpg" alt="Logo" />
+    </div>
 
-        <!--* Navegacion *-->
-        <nav class="navegacion">
-          <a href="../index.html">Inicio</a>
-          <a href="tutoriales.html">Tutoriales</a>
-          <a href="productos.html" class="activo">Productos</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
+    <!--* Navegacion *-->
+    <nav class="header-navegacion">
+      <a href="../index.html">Inicio</a>
+      <a href="./pages/productos.html" class="activo">Productos</a>
+      <a href="./pages/tutoriales.html">Tutoiales</a>
+      <a href="./pages/contacto.html">Contacto</a>
+      <a href="#realizaPedido" class="enlace-pedido">Realiza tu pedido</a>
+    </nav>
+  </header>
+
+  <!-- * Hero *
+  <section class="swiper hero">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-1.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-2.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+
+      <li class="swiper-slide">
+        <img
+          src="../assets/img/banners/banner-header-3.jpg"
+          alt="Imagen slide hero"
+        />
+      </li>
+    </ul>
+  </section> -->
+
+  <!--* Productos *-->
+  <main class="all-products contenedor">
+    <h2 class="all-products-headig">
+      Nuestros <span>productos</span>
+    </h2>
+
+    <div class="categorias-productos">
+
+      <div class="buton-container">
+        <img src="../assets/img/productos/btn-etiquetadoras.svg" alt="Etiquetadoras" id="btn-img1">
+        <div class="categorias-productos-btn">
+        <p>Etiquetadoras</p>
+      </div>
+      </div>
+      
+      <div class="categorias-productos-btn">
+        <img src="../assets/img/productos/btn-sellos.svg" alt="Sellos" id="btn-img2">
+        
+        <p>Sellos</p>
+      </div>
+
+      <div class="categorias-productos-btn">
+        <img src="../assets/img/productos/btn-grapadoras.svg" alt="Grapadoras" id="btn-img3">
+
+        <p>Grapadoras</p>
       </div>
     </div>
-  </header>
+
+    <div class="productos-grid">
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/manualOpen.png" alt="Manual Open">
+
+        <div class="producto-texto">
+          <h3>Etiquetadora Manual Open</h3>
+
+          <p>
+            Imprescindible para aplicar etiquetas de precio o códigos a los productos, las etiquetadoras Open son conocidas como las mas resistentes del mercado.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/monarch.png" alt="MONARCH 1110">
+
+        <div class="producto-texto">
+          <h3>MONARCH 1110</h3>
+
+          <p>
+            Hecha para trabajo pesado, posee una línea de impresión, y permite etiquetar números y letras, diseñada especialmente para marcar precios o fechas de vencimiento, con la que su negocio siempre puede contar.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/monarch115.png" alt="MONARCH 1115">
+
+        <div class="producto-texto">
+          <h3>MONARCH 1115</h3>
+
+          <p>
+            Movimiento suave, ligero y portabilidad ayuda a mejorar la productividad. Cargue las etiquetas, seleccione el precio del producto, comience a hacer clic y pegue. Imprime código y precio. Equipo de dos líneas.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/monarch1136.png" alt="MONARCH 1136">
+
+        <div class="producto-texto">
+          <h3>MONARCH 1136</h3>
+
+          <p>
+            Imprima letras y números en la primera línea,
+            es un dispositivo de baje/cargue para colocar las etiquetas adhesivas rápida y fácilmente.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/MOTEX5500.png" alt="MOTEX 5500">
+
+        <div class="producto-texto">
+          <h3>MOTEX 5500</h3>
+
+          <p>
+            Etiquetadora de 8 dígitos. Excelente calidad y terminación,  Complemento ideal para todo tipo de comercio o negocio por su versatilidad.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/MOTEX5600.png" alt="MOTEX 5600">
+
+        <div class="producto-texto">
+          <h3>MOTEX 5600</h3>
+
+          <p>
+            Etiquetadora de precios con un diseño sólido cuenta con un sistema solido, pero de operación suave y precisa.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/PAXAR2253Consecutiva.png" alt="PAXAR 2253 Consecutiva">
+
+        <div class="producto-texto">
+          <h3>PAXAR 2253 Consecutiva</h3>
+
+          <p>
+            Permite marcar la tela en los procesos de corte de todo tipo de prendas, realiza una marcación con numeración de 1 en 1, 2 en 2 y fijo . diseñada para dispensar etiquetes adhesivos.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/SATO-PB2.png" alt="SATO-PB 2">
+
+        <div class="producto-texto">
+          <h3>SATO-PB 2</h3>
+
+          <p>
+            Es una etiquetadora confiable de dos líneas con suficientes caracteres por línea para imprimir una amplia variedad de información, como códigos de departamento.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/ImpresoradeetiquetasTE200.png" alt="Impresora de etiquetas TE 200">
+
+        <div class="producto-texto">
+          <h3>Impresora de etiquetas TE 200</h3>
+
+          <p>
+            Ofrece una impresora de escritorio competitiva y duradera que es a la vez versátil y fácil de usar,  permite impresión térmica con gran velocidad  y alta resolución.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/ImpresoradeetiquetasTtp244.png" alt="Impresora de etiquetas Ttp 244">
+
+        <div class="producto-texto">
+          <h3>Impresora de etiquetas Ttp 244</h3>
+
+          <p>
+            Impresora de transferencia térmica para código de barras con buena relación calidad-precio, Velocidad de impresión y flexibilidad  además de  resistente y duradera.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/Rollos.png" alt="Manual Open">
+
+        <div class="producto-texto">
+          <h3>Rollos</h3>
+
+          <p>
+            Ofrecemos variedad de rollos, para distintos tipos de etiquetadoras manuales y automáticas.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+
+      <!-- Producto -->
+      <div class="producto-etiquetadora">
+        <img src="../assets/img/productos/etiquetadoras/Tintaparaetiquetadoras.png" class="tinta-img" alt="Tinta para etiquetadoras">
+
+        <div class="producto-texto">
+          <h3>Tinta para etiquetadoras</h3>
+
+          <p>
+            Dale nueva vida a tu máquina etiquetadora re entintando el rodillo con las practicas recargas, con tinta de nuestra marca a un precio muy amigable.
+          </p>
+        </div>
+      </div> <!-- /Producto -->
+    </div>
+  </main>
+
+  <!--* Footer *-->
+  <footer class="footer">
+    <div class="banner-footer">
+      <img src="../assets/img/banners/banner-footer.jpg" alt="Banner footer" id="bannerFooterInt">
+    </div>
+
+    <div class="footer-contacto contenedor">
+      <!-- Telefonos -->
+      <div class="footer-telefonos">
+        <h4>Llamanos</h4>
+
+        <div class="telefonos">
+          <p>Ventas</p>
+
+          <p>+57 315 346 0098</p>
+        </div>
+
+        <div class="telefonos">
+          <p>Soporte y Mantenimiento</p>
+
+          <p>+57 313 436 5542</p>
+        </div>
+
+        <div class="telefonos">
+          <p>Informacion</p>
+
+          <p>+57 300 877 2888</p>
+        </div>
+      </div>
+
+      <!-- Ubicacion -->
+      <div class="footer-ubicacion">
+        <h4>Estamos ubicados en</h4>
+
+        <div class="direccion">
+          <p>Calle 51 Sur # 79F - 42</p>
+          <p>Casa Blanca, Kennedy</p>
+          <p>Bogota D.C., Colombia</p>
+        </div>
+      </div>
+
+      <!-- Correos -->
+      <div class="footer-correos">
+        <h4>Escribenos</h4>
+
+        <div class="correos">
+          <p>gerencia@ecservitec.com</p>
+
+          <p>ventas@ecservitec.com</p>
+
+          <p>ecservitec@ecservitec.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>
+        &copy; Copyright EcServitec 2023. Todos los derechos reservados
+      </p>
+
+      <a href="#">Desarrollado por WirkiSoft</a>
+    </div>
+  </footer>
+
+  <!--- Libería Swiper --->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <!-- App js -->
   <script src="../js/app.js"></script>

@@ -7,7 +7,7 @@
 
     <title>EcServitec</title>
 
-    <!-- Fuentes -->
+    <!--- Fuentes --->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,343 +15,516 @@
       rel="stylesheet"
     />
 
-    <!-- Normalize CSS -->
+    <!--- Libería SwiperJS --->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--- Normalize CSS --->
     <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- Estilos CSS -->
+    <!--- Estilos CSS --->
     <link rel="stylesheet" href="css/globales.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!--* Barra *-->
+    <div class="barra">
+      <!-- Contacto -->
+      <div class="barra-contacto">
+        <div class="barra-telefono">
+          <img
+            src="assets/svg/generales/phone-icono.svg"
+            alt="Icono telefono"
+          />
+
+          <p>315 346 0098</p>
+        </div>
+
+        <p class="hidden">ventas@ecservitec.com</p>
+      </div>
+
+      <!-- Redes -->
+      <div class="barra-redes">
+        <img
+          src="assets/svg/redes-sociales/facebook-logo.svg"
+          alt="Logo Facebook"
+        />
+
+        <img
+          src="assets/svg/redes-sociales/instagram-logo.svg"
+          alt="Logo Instagram"
+        />
+
+        <img
+          src="assets/svg/redes-sociales/youtube-logo.svg"
+          alt="Logo YouTube"
+        />
+      </div>
+    </div>
+
     <!--* Header *-->
     <header class="header">
-      <div class="contenido-header contenedor">
-        <!--* Logo *-->
-        <div class="barra">
-          <div class="logo">
-            <img src="img/Logo.jpg" alt="Logo" />
-          </div>
-
-          <!--* Navegacion *-->
-          <nav class="navegacion">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="pages/tutoriales.html">Tutoriales</a>
-            <a href="pages/productos.html">Productos</a>
-            <a href="pages/contacto.html">Contacto</a>
-          </nav>
-        </div>
+      <!--* Logo *-->
+      <div class="header-logo">
+        <img src="assets/img/Logo.jpg" alt="Logo" />
       </div>
+
+      <!--* Navegacion *-->
+      <nav class="header-navegacion">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="./pages/productos.html">Productos</a>
+        <a href="./pages/tutoriales.html">Tutoiales</a>
+        <a href="./pages/contacto.html">Contacto</a>
+        <a href="#realizaPedido" class="enlace-pedido">Realiza tu pedido</a>
+      </nav>
     </header>
 
     <!--* Hero *-->
-    <div class="hero">
-      <!--* Banner *-->
-      <div class="inner-header">
-        <img src="img/hero.jpg" alt="" class="logo-hero">
-      </div>
+    <section class="swiper hero">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img
+            src="assets/img/banners/banner-header-1.jpg"
+            alt="Imagen slide hero"
+          />
+        </li>
 
-      <!--* Olas *-->
-      <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7"/>
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"/>
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"/>
-            
-          </g>
-        </svg>
-      </div>
-    </div>
+        <li class="swiper-slide">
+          <img
+            src="assets/img/banners/banner-header-2.jpg"
+            alt="Imagen slide hero"
+          />
+        </li>
 
-    <!--* Sobre Nosotros *-->
-    <div class="sobre-nosotros">
+        <li class="swiper-slide">
+          <img
+            src="assets/img/banners/banner-header-3.jpg"
+            alt="Imagen slide hero"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <!--* Nustros Servicios *-->
+    <section class="nuestros-servicios">
+      <h2 class="nuestros-servicios-headig">
+        ¿Por qué elegir <span>nuestros servicios?</span>
+      </h2>
+
+      <div class="nuestros-servicios-cards contenedor">
+        <!-- Calidad -->
+        <div class="card-servicio">
+          <img
+            class="card-servicio-img"
+            src="assets/svg/servicios/calidad-icono.svg"
+            alt="Icono calidad"
+          />
+
+          <p class="card-servicio-txt">
+            Utilizamos materiales de alta calidad, herramientas 
+            y suministros profesionales, atención al detalle 
+            que nos destaca por sobre otras empresas
+          </p>
+        </div>
+
+        <!-- Colaboradores -->
+        <div class="card-servicio">
+          <img
+            class="card-servicio-img"
+            src="assets/svg/servicios/colaboradores-icono.svg"
+            alt="Icono calidad"
+          />
+
+          <p class="card-servicio-txt">
+            Nuestros colaboradores 
+            son profesionales en cada una 
+            de sus labores, 
+            manejan comunicación directa y asertiva
+            para cumplir con los 
+            requerimientos de nuestra clientela.
+          </p>
+        </div>
+
+        <!-- Adaptabilidad -->
+        <div class="card-servicio">
+          <img
+            class="card-servicio-img"
+            src="assets/svg/servicios/adaptabilidad-icono.svg"
+            alt="Icono calidad"
+          />
+
+          <p class="card-servicio-txt">
+            No tienes que pagar más 
+            para obtener un gran producto. 
+            Creamos ofertas que 
+            se adaptan a las necesidades 
+            y expectativas de cada 
+            uno de nuestros clientes.
+          </p>
+        </div>
+
+        <!-- Servicio al Cliente -->
+        <div class="card-servicio">
+          <img
+            class="card-servicio-img"
+            src="assets/svg/servicios/servicio-cliente-icono.svg"
+            alt="Icono calidad"
+          />
+
+          <p class="card-servicio-txt">
+            Vemos esto como una 
+            oportunidad para 
+            ahorrar tiempo y frustración 
+            a nuestros clientes. 
+            Brindamos una comunicación 
+            oportuna a preguntas 
+            e inquietudes de
+            nuestra clientela.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--* Realiza Tu Pedido *-->
+    <section class="realiza-tu-pedido">
       <div class="contenedor">
-        <h2>¿Por qué elegir nuestra empresa?</h2>
-  
-        <!--* Cards *-->
-        <div class="cards">
-          <!--* Card - Alta Calidad *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    </path> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Alta Calidad</span> 
-                
-                <p class="message">
-                  Utilizamos materiales de alta calidad, herramientas y suministros profesionales, y una atención al detalle que no se encuentra en la mayoría de las empresas.
-                </p> 
-              </div>
+        <h2 class="realiza-tu-pedido-heading">
+          Ofrecemos servicios <br/>
+          <span>Confiables <span id="comercial">&</span> Profesionales</span>
+        </h2>
+
+        <div class="realiza-tu-pedido-cards">
+          <!-- Etiquetadoras y Grapadoras -->
+          <div class="card-pedido">
+            <img
+              class="card-pedido-img"
+              src="assets/img/realiza-pedido/venta-etiquetadoras.png"
+              alt="Imagen etiquetadora"
+            />
+
+            <div class="card-pedido-txt">
+              <h3>Ventas de Etiquetadoras & Grapadoras</h3>
+
+              <p>
+                Ofrecemos etiquetadoras manuales y grapadoras en múltiples
+                variantes: manuales, industriales, semi-industriales y
+                eléctricas. Herramientas precisas y eficientes para tus
+                necesidades de etiquetado y grapado.
+              </p>
             </div>
           </div>
-  
-          <!--* Card - Profesionalismo *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    </path> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Profesionalismo</span> 
-                
-                <p class="message">
-                  Nuestros colaboradores son profesionales en cada una de sus labores, con una comunicación asertiva para cumplir con los requerimientos de nuestros clientes.
-                </p> 
-              </div>
+
+          <!-- Reparacion y Matenimiento -->
+          <div class="card-pedido">
+            <img
+              class="card-pedido-img"
+              src="assets/img/realiza-pedido/reparacion.png"
+              alt="Imagen reparacion"
+            />
+
+            <div class="card-pedido-txt">
+              <h3>Reparación & Mantenimiento</h3>
+
+              <p>
+                Brindamos cotización, valoración y servicios de mantenimiento y
+                reparación para máquinas etiquetadoras y grapadoras manuales e
+                industriales.
+              </p>
             </div>
           </div>
-  
-          <!--* Card - Flexibilidad *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    </path> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Flexibilidad</span> 
-                
-                <p class="message">
-                  No tienes que pagar más para obtener un gran producto. Creamos ofertas que adaptan a las necesidades y expectativas de cada uno de nuestros clientes.
-                </p> 
-              </div>
+
+          <!-- Insumos y Repuestos -->
+          <div class="card-pedido">
+            <img
+              class="card-pedido-img"
+              src="assets/img/realiza-pedido/venta-insumos.png"
+              alt="Imagen insumos"
+            />
+
+            <div class="card-pedido-txt">
+              <h3>Ventas de Insumos & Repuestos</h3>
+
+              <p>
+                Ofrecemos papel en una amplia gama de colores, etiquetas para
+                diversas especificaciones, rodillos de tinta y tintas para
+                etiquetadoras, sellos, registradoras y numeradores.
+              </p>
             </div>
           </div>
-  
-          <!--* Card - Cortes *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    </path> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Cortés</span> 
-                
-                <p class="message">
-                  Vemos esto como una oportunidad para ahorrar tiempo y frustración a nuestros clientes. Brindamos una comunicación oportuna a preguntas e inquietudes de nuestros clientes.
-                </p> 
-              </div>
+
+          <!-- Personalizacion Sellos -->
+          <div class="card-pedido">
+            <img
+              class="card-pedido-img"
+              src="assets/img/realiza-pedido/sellos-personalizados.png"
+              alt="Imagen sellos"
+            />
+
+            <div class="card-pedido-txt">
+              <h3>Personalización</h3>
+
+              <p>
+                Personalizamos sellos con logos y diseños únicos para
+                autenticidad en cada impresión. Simplifica tu marca y
+                organización con nuestras soluciones de sellos personalizados.
+                Destaca con impresiones distintivas y profesionales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="realiza-siguenos">
+          <a href="#" class="realiza-pedido-btn btn">Realiza Tu Pedido</a>
+
+          <div class="siguenos">
+            <p>Siguenos en nuestras redes sociales:</p>
+
+            <div class="siguenos-redes">
+              <img
+                src="assets/svg/redes-sociales/facebook-logo.svg"
+                alt="Logo Facebook"
+              />
+
+              <img
+                src="assets/svg/redes-sociales/instagram-logo.svg"
+                alt="Logo Instagram"
+              />
+
+              <img
+                src="assets/svg/redes-sociales/youtube-logo.svg"
+                alt="Logo YouTube"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!--* Servicios *-->
-    <div class="servicios">
-      <div class="contenedor">
-        <div class="servicios-contenido">
-          <div class="servicios-imagen">
-            <img src="img/Servicios.jpg" alt="Imagen servicios">
+    </section>
+
+    <!--* Nuestros Productos *-->
+    <main class="nuestros-productos contenedor">
+      <h1 class="nuestros-productos-headig">
+        Conoce <span>nuestros productos</span>
+      </h1>
+
+      <div class="cards-productos">
+        <!-- Grapadoras -->
+        <div class="card-producto">
+          <div class="card-producto-img">
+            <img
+              src="assets/img/productos/grapadoras.png"
+              alt="Imagen grapadora"
+            />
+
+            <p>Grapadoras</p>
           </div>
 
-          <div class="servicios-redes">
-            <h2>Servicios confiables y profesionales</h2>
-
-            <div class="redes">
-              <!--* Facebook *-->
-              <a href="#">
-                <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <title>facebook</title> 
-                    <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path> 
-                  </g>
-                </svg>
-              </a>
-              
-              <!--* Youtube *-->
-              <a href="#">
-                <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <title>youtube</title> 
-                    <path d="M12.932 20.459v-8.917l7.839 4.459zM30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"></path> 
-                  </g>
-                </svg>
-              </a>
-
-              <!--* Instagram *-->
-              <a href="#">
-                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>}<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier"> 
-                    <title>instagram [#fffffffffff]</title> <desc>Created with Sketch.</desc> 
-                    <defs></defs> 
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#ffffff"> 
-                        <g id="icons" transform="translate(56.000000, 160.000000)"> 
-                          <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#fffffffffff]"> </path> 
-                        </g> 
-                      </g> 
-                    </g> 
-                  </g>
-                </svg>
-              </a>
-            </div>
+          <div class="card-producto-descripcion">
+            <p>Industriales</p>
+            <p>Manuales</p>
+            <p>Electricas</p>
+            <p>Suministros</p>
           </div>
         </div>
 
-        <!--* Cards *-->
-        <div class="cards cards-servicios">
-          <!--* Card - Servicio 1 *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image image-servicio">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>service-setting-solid</title> 
-                    <g id="Layer_2" data-name="Layer 2">
-                      <g id="icons_Q2" data-name="icons Q2"> 
-                        <path d="M28.7,18.8l-1.8,2.9,1.4,1.4,2.9-1.8,1,.4L33,25h2l.8-3.3,1-.4,2.9,1.8,1.4-1.4-1.8-2.9a4.2,4.2,0,0,0,.4-1L43,17V15l-3.3-.8a4.2,4.2,0,0,0-.4-1l1.8-2.9L39.7,8.9l-2.9,1.8-1-.4L35,7H33l-.8,3.3-1,.4L28.3,8.9l-1.4,1.4,1.8,2.9a4.2,4.2,0,0,0-.4,1L25,15v2l3.3.8A4.2,4.2,0,0,0,28.7,18.8ZM34,14a2,2,0,1,1-2,2A2,2,0,0,1,34,14Z"></path> 
-                        <path d="M42.2,28.7a5.2,5.2,0,0,0-4-1.1l-9.9,1.8a4.5,4.5,0,0,0-1.4-3.3L19.8,19H5a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H8.3l11.2,9.1,20.4-3.7a5,5,0,0,0,2.3-8.7Zm-3,4.8L20.5,36.9,10,28.2V23h8.2l5.9,5.9a.8.8,0,0,1-1.2,1.2l-3.5-3.5a2,2,0,0,0-2.8,2.8l3.5,3.5a4.5,4.5,0,0,0,3.4,1.4,5.7,5.7,0,0,0,1.8-.3h0l13.6-2.4a1.1,1.1,0,0,1,.8.2.9.9,0,0,1,.3.7A1,1,0,0,1,39.2,33.5Z"></path> 
-                      </g> 
-                    </g> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Servicio 1</span> 
-                
-                <p class="message">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quasi beatae numquam ipsum impedit illum iure suscipit, tempora sed mollitia.
-                </p> 
-              </div>
-            </div>
+        <!-- Sellos -->
+        <div class="card-producto">
+          <div class="card-producto-img">
+            <img src="assets/img/productos/sellos.png" alt="Imagen sellos" />
+
+            <p>Sellos</p>
           </div>
-  
-          <!--* Card - Servicio 2 *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image image-servicio">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>service-setting-solid</title> 
-                    <g id="Layer_2" data-name="Layer 2">
-                      <g id="icons_Q2" data-name="icons Q2"> 
-                        <path d="M28.7,18.8l-1.8,2.9,1.4,1.4,2.9-1.8,1,.4L33,25h2l.8-3.3,1-.4,2.9,1.8,1.4-1.4-1.8-2.9a4.2,4.2,0,0,0,.4-1L43,17V15l-3.3-.8a4.2,4.2,0,0,0-.4-1l1.8-2.9L39.7,8.9l-2.9,1.8-1-.4L35,7H33l-.8,3.3-1,.4L28.3,8.9l-1.4,1.4,1.8,2.9a4.2,4.2,0,0,0-.4,1L25,15v2l3.3.8A4.2,4.2,0,0,0,28.7,18.8ZM34,14a2,2,0,1,1-2,2A2,2,0,0,1,34,14Z"></path> 
-                        <path d="M42.2,28.7a5.2,5.2,0,0,0-4-1.1l-9.9,1.8a4.5,4.5,0,0,0-1.4-3.3L19.8,19H5a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H8.3l11.2,9.1,20.4-3.7a5,5,0,0,0,2.3-8.7Zm-3,4.8L20.5,36.9,10,28.2V23h8.2l5.9,5.9a.8.8,0,0,1-1.2,1.2l-3.5-3.5a2,2,0,0,0-2.8,2.8l3.5,3.5a4.5,4.5,0,0,0,3.4,1.4,5.7,5.7,0,0,0,1.8-.3h0l13.6-2.4a1.1,1.1,0,0,1,.8.2.9.9,0,0,1,.3.7A1,1,0,0,1,39.2,33.5Z"></path> 
-                      </g> 
-                    </g> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Servicio 2</span> 
-                
-                <p class="message">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nemo cupiditate fuga nisi eveniet? Tempore molestias provident culpa quisquam inventore?
-                </p> 
-              </div>
-            </div>
+
+          <div class="card-producto-descripcion">
+            <p>De bolsillo</p>
+            <p>De escritorio</p>
+            <p>Fecheros</p>
+            <p>Suministros</p>
           </div>
-  
-          <!--* Card - Servicio 3 *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image image-servicio">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>service-setting-solid</title> 
-                    <g id="Layer_2" data-name="Layer 2">
-                      <g id="icons_Q2" data-name="icons Q2"> 
-                        <path d="M28.7,18.8l-1.8,2.9,1.4,1.4,2.9-1.8,1,.4L33,25h2l.8-3.3,1-.4,2.9,1.8,1.4-1.4-1.8-2.9a4.2,4.2,0,0,0,.4-1L43,17V15l-3.3-.8a4.2,4.2,0,0,0-.4-1l1.8-2.9L39.7,8.9l-2.9,1.8-1-.4L35,7H33l-.8,3.3-1,.4L28.3,8.9l-1.4,1.4,1.8,2.9a4.2,4.2,0,0,0-.4,1L25,15v2l3.3.8A4.2,4.2,0,0,0,28.7,18.8ZM34,14a2,2,0,1,1-2,2A2,2,0,0,1,34,14Z"></path> 
-                        <path d="M42.2,28.7a5.2,5.2,0,0,0-4-1.1l-9.9,1.8a4.5,4.5,0,0,0-1.4-3.3L19.8,19H5a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H8.3l11.2,9.1,20.4-3.7a5,5,0,0,0,2.3-8.7Zm-3,4.8L20.5,36.9,10,28.2V23h8.2l5.9,5.9a.8.8,0,0,1-1.2,1.2l-3.5-3.5a2,2,0,0,0-2.8,2.8l3.5,3.5a4.5,4.5,0,0,0,3.4,1.4,5.7,5.7,0,0,0,1.8-.3h0l13.6-2.4a1.1,1.1,0,0,1,.8.2.9.9,0,0,1,.3.7A1,1,0,0,1,39.2,33.5Z"></path> 
-                      </g> 
-                    </g> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Servicio 3</span> 
-                
-                <p class="message">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusamus ullam consequuntur explicabo aspernatur placeat eos sequi maxime nisi odit?
-                </p> 
-              </div>
-            </div>
+        </div>
+
+        <!-- Etiquetadoras -->
+        <div class="card-producto">
+          <div class="card-producto-img">
+            <img
+              src="assets/img/productos/etiquetadoras.png"
+              alt="Imagen grapadora"
+            />
+
+            <p>Etiquetadoras</p>
           </div>
-  
-          <!--* Card - Servicio 4 *-->
-          <div class="card"> 
-            <div class="header-card"> 
-              <div class="image image-servicio">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <title>service-setting-solid</title> 
-                    <g id="Layer_2" data-name="Layer 2">
-                      <g id="icons_Q2" data-name="icons Q2"> 
-                        <path d="M28.7,18.8l-1.8,2.9,1.4,1.4,2.9-1.8,1,.4L33,25h2l.8-3.3,1-.4,2.9,1.8,1.4-1.4-1.8-2.9a4.2,4.2,0,0,0,.4-1L43,17V15l-3.3-.8a4.2,4.2,0,0,0-.4-1l1.8-2.9L39.7,8.9l-2.9,1.8-1-.4L35,7H33l-.8,3.3-1,.4L28.3,8.9l-1.4,1.4,1.8,2.9a4.2,4.2,0,0,0-.4,1L25,15v2l3.3.8A4.2,4.2,0,0,0,28.7,18.8ZM34,14a2,2,0,1,1-2,2A2,2,0,0,1,34,14Z"></path> 
-                        <path d="M42.2,28.7a5.2,5.2,0,0,0-4-1.1l-9.9,1.8a4.5,4.5,0,0,0-1.4-3.3L19.8,19H5a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H8.3l11.2,9.1,20.4-3.7a5,5,0,0,0,2.3-8.7Zm-3,4.8L20.5,36.9,10,28.2V23h8.2l5.9,5.9a.8.8,0,0,1-1.2,1.2l-3.5-3.5a2,2,0,0,0-2.8,2.8l3.5,3.5a4.5,4.5,0,0,0,3.4,1.4,5.7,5.7,0,0,0,1.8-.3h0l13.6-2.4a1.1,1.1,0,0,1,.8.2.9.9,0,0,1,.3.7A1,1,0,0,1,39.2,33.5Z"></path> 
-                      </g> 
-                    </g> 
-                  </g>
-                </svg>
-              </div> 
-                
-              <div class="content">
-                <span class="title">Servicio 4</span> 
-                
-                <p class="message">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quasi quibusdam magni praesentium aperiam laudantium iure maiores commodi voluptatem repellat.
-                </p> 
-              </div>
-            </div>
+
+          <div class="card-producto-descripcion">
+            <p>De 8 digitos</p>
+            <p>De 10 digitos</p>
+            <p>De 1 linea de marcacion</p>
+            <p>Doble linea</p>
+            <p>Textiles</p>
+            <p>Suministros</p>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- comentario para subir git -->
-    <!-- App js -->
+      <a href="./pages/productos.html" class="ver-productos btn">Ver todos los productos</a>
+    </main>
+
+    <!--* Valores *-->
+    <section class="nuestros-valores">
+      <div class="nuestros-valores-cards">
+        <!-- Cumplimiento -->
+        <div class="valor-card">
+          <img
+            src="assets/svg/valores/cumplimiento-icono.svg"
+            alt="Icono cumplimiento"
+          />
+
+          <div class="valor-card-txt">
+            <h3>Cumplimiento</h3>
+
+            <p>
+              Manejamos grandes estandares de calidad y diseno. Nuestro objetivo
+              es ofrecer soluciones rapidas, cumpliendo con las necesidades de
+              nuestros clientes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Satisfaccion -->
+        <div class="valor-card">
+          <img
+            src="assets/svg/valores/satrisfacción-icono.svg"
+            alt="Icono satisfaccion"
+          />
+
+          <div class="valor-card-txt">
+            <h3>Satisfaccion</h3>
+
+            <p>
+              Ofrecemos productos duraderos, reistentes y faciles de usar,
+              enfocados a trabajo intensivo. Ademas de contar con un excelente
+              servicio de atencion al cliente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Competitividad -->
+        <div class="valor-card">
+          <img
+            src="assets/svg/valores/competitividad-icono.svg"
+            alt="Icono competitividad"
+          />
+
+          <div class="valor-card-txt">
+            <h3>Competitividad</h3>
+
+            <p>
+              Somos una empresa lider en el sector de grapadoras, etiquetadoras
+              y sellos, teniendo siempre los precios mas competitivos del
+              mercado, con ofertas y descuentos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--* Clientes *-->
+    <section class="clientes">
+      <ul class="clientes__lista">
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/alkosto-logo.png" alt="Imagen cliente" />
+        </li>
+
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/casa-grajales-logo.png" alt="" />
+        </li>
+
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/levapan-logo.png" alt="" />
+        </li>
+
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/panamericana-logo.png" alt="" />
+        </li>
+
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/preflex-logo.png" alt="" />
+        </li>
+        
+        <li class="clientes__lista-elemento">
+          <img src="assets/img/clientes/super-nat-logo.png" alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <!--* Footer *-->
+    <footer class="footer">
+      <div class="banner-footer">
+        <img src="assets/img/banners/banner-footer.jpg" alt="Banner footer" id="bannerFooter">
+      </div>
+
+      <div class="footer-contacto contenedor">
+        <!-- Telefonos -->
+        <div class="footer-telefonos">
+          <h4>Llamanos</h4>
+
+          <div class="telefonos">
+            <p>Ventas</p>
+
+            <p>+57 315 346 0098</p>
+          </div>
+
+          <div class="telefonos">
+            <p>Soporte y Mantenimiento</p>
+
+            <p>+57 313 436 5542</p>
+          </div>
+
+          <div class="telefonos">
+            <p>Informacion</p>
+
+            <p>+57 300 877 2888</p>
+          </div>
+        </div>
+
+        <!-- Ubicacion -->
+        <div class="footer-ubicacion">
+          <h4>Estamos ubicados en</h4>
+
+          <div class="direccion">
+            <p>Calle 51 Sur # 79F - 42</p>
+            <p>Casa Blanca, Kennedy</p>
+            <p>Bogota D.C., Colombia</p>
+          </div>
+        </div>
+
+        <!-- Correos -->
+        <div class="footer-correos">
+          <h4>Escribenos</h4>
+
+          <div class="correos">
+            <p>gerencia@ecservitec.com</p>
+
+            <p>ventas@ecservitec.com</p>
+
+            <p>ecservitec@ecservitec.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>
+          &copy; Copyright EcServitec 2023. Todos los derechos reservados
+        </p>
+
+        <a href="#">Desarrollado por WirkiSoft</a>
+      </div>
+    </footer>
+
+    <!--- Libería Swiper --->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--- App js --->
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -10,3 +10,129 @@
   --blanco: #FFFFFF;
   --gris: #F2F2F2;
 }
+
+.all-products-headig {
+  margin: 2rem 0 0 0;
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--fuenteTitulo);
+  font-weight: bold;
+  color: var(--negro);
+}
+
+.all-products-headig span {
+  color: var(--naranja);
+  font-style: italic;
+}
+
+.categorias-productos{
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.buton-container{
+  display: flex;
+  align-items: center;
+}
+
+.categorias-productos-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 3rem;
+  gap: 0rem;
+  height: 6rem;
+  width: 200px;
+  cursor: pointer;
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+            linear-gradient(76deg, #00baff 14%, #128ab7 92%, #86f6ac 128%, transparent 128%);
+border-radius: 30px;
+box-sizing: border-box;
+z-index: 1;
+position: relative;
+}
+
+.categorias-productos-btn p {
+  font-size: 18px;
+}
+
+.categorias-productos-btn-activo {
+  background-color: var(--colorPrincipal);
+}
+
+#btn-img1 {
+  width: 110px;
+  margin-right: -2rem;
+  z-index: 2;
+}
+
+#btn-img2{
+  height: 100px;
+}
+
+#btn-img3{
+  height: 110px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.producto-etiquetadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a09797;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.producto-etiquetadora img {
+  width: 70%;
+}
+
+.producto-etiquetadora .tinta-img {
+  width: 30%;
+}
+
+.producto-texto h3 {
+  color: var(--negro);
+  font-family: var(--fuenteTitulo);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.producto-texto p {
+  color: var(--colorSecundario);
+  font-family: var(--fuenteTextos);
+  text-align: justify;
+}
+
+@media (min-width: 768px) { 
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-products-headig {
+    font-size: 24px;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
