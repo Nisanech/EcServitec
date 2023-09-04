@@ -33,8 +33,16 @@ function cambiarBannerFooter() {
     bannerImgInt.src = '../assets/img/banners/banner-footer-movil.jpg'
   } else {
     bannerImg.src = "assets/img/banners/banner-footer.jpg";
+    bannerImgInt.src = "../assets/img/banners/banner-footer.jpg";
   }
-} 
+}
+
+function botonesProductos() {
+  const anchoPantalla = window.innerWidth
+
+  const imgBtn = document.getElementsByClassName('btn-img');
+  console.log(imgBtn);
+}
 
 //* Llama a la función cuando se carga la página 
 window.onload = cambiarBannerFooter

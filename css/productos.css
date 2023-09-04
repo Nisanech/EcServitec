@@ -33,7 +33,29 @@
   justify-content: center;
 }
 
-.categorias-productos img {
+.categorias-productos-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  border: 1px solid var(--gris);
+  height: 8rem;
+  width: 25rem;
+}
+
+.categorias-productos-btn p {
+  font-size: 18px;
+}
+
+.categorias-productos-btn-activo {
+  background-color: var(--colorPrincipal);
+}
+
+.categorias-productos-btn-activo p {
+  color: var(--blanco);
+}
+
+.categorias-productos-btn img {
   width: 30%;
   cursor: pointer;
 }
