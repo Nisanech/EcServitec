@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+
 :root {
-  --fuenteTitulo: 'Libre Franklin', sans-serif;
-  --fuenteTextos: 'Open Sans', sans-serif;
+  --fuenteTitulo: 'Manrope', sans-serif;
+  --fuenteTextos: 'Manrope', sans-serif;
 
   --colorPrincipal: #F58634;
   --colorSecundario: #363435;
@@ -9,4 +12,90 @@
   --negro: #111111;
   --blanco: #FFFFFF;
   --gris: #F2F2F2;
+}
+
+
+
+main h3{
+  font-family: var(--fuenteTitulo);
+  font-weight: 700;
+  color: var(--colorPrincipal);
+  font-size: 25px;
+  text-align: center;
+}
+
+.grid-tutoriales{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: center;
+align-content: center;
+justify-items: center;
+gap: 2rem;
+margin-bottom: 5rem;
+}
+
+@media (max-width: 728px) {
+  .grid-tutoriales{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.cardtutoriales{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 2rem;
+gap: 1rem;
+width: 35rem;
+}
+
+.cardtutoriales{
+  text-align: center;
+}
+
+.tecnico-container{
+  margin-top: 200px;
+  background-color: var(--colorPrincipal);
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.img-apoyo-técnico img{
+  width: 482px;
+  
+}
+
+@media (max-width: 949px) {
+
+  .tecnico-container{
+    flex-direction: column;
+  }
+  .text-tecnico{
+    order: 2;
+  }
+}
+
+.text-tecnico h4{
+  color: var(--blanco);
+  font-family: var(--fuenteTitulo);
+  font-weight: 700;
+}
+
+.text-tecnico p{
+  color: var(--blanco);
+  font-family: var(--fuenteTextos);
+  font-weight: 400;
+}
+.text-tecnico p>b{
+  color: var(--blanco);
+  font-family: var(--fuenteTextos);
+  font-weight: 700;
 }
