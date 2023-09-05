@@ -252,6 +252,7 @@
   border-radius: 20px 0px 0px 0px;
   gap: 5rem;
   justify-content: flex-end;
+  align-items: center;
   padding-top: 1rem;
   padding-left: 4rem;
   padding-right: 3rem;

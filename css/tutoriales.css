@@ -58,7 +58,6 @@ width: 35rem;
 }
 
 .tecnico-container{
-  margin-top: 200px;
   background-color: var(--colorPrincipal);
   display: flex;
   align-items: center;
