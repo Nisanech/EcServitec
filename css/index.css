@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
 :root {
-  --fuenteTitulo: 'Manrope', sans-serif;;
-  --fuenteTextos: 'Manrope', sans-serif;;
+  --fuenteTitulo: 'Manrope', sans-serif;
+  --fuenteTextos: 'Manrope', sans-serif;
 
   --naranja: #F58634;
   --negro: #515151;

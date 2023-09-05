@@ -40,39 +40,6 @@
   align-items: center;
 }
 
-.categorias-productos-btn {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 3rem;
-  gap: 0rem;
-  height: 6rem;
-  width: 200px;
-  cursor: pointer;
-  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
-            linear-gradient(76deg, #343D44 14%, #6A727D 92%, #86f6ac 128%, transparent 128%);
-border-radius: 30px;
-box-sizing: border-box;
-z-index: 1;
-position: relative;
-}
-
-.categorias-productos-btn:hover{
-  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
-  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
-  linear-gradient(76deg, #00baff 14%, #128ab7 92%, #86f6ac 128%, transparent 128%);
-border-radius: 30px;
-}
-
 .categorias-productos-btn p {
   font-size: 18px;
 }
@@ -80,14 +47,18 @@ border-radius: 30px;
 
 
 #btn-img1{
-  filter: grayscale(0%);
+  filter: grayscale(100%);
   cursor: pointer;
   width: 350px;
 }
 
+#btn-img1:hover{
+  filter: grayscale(0%);
+}
+
 #btn-img2{
   width: 200px;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   cursor: pointer;
 }
 
@@ -145,6 +116,10 @@ border-radius: 30px;
   color: var(--colorSecundario);
   font-family: var(--fuenteTextos);
   text-align: justify;
+}
+
+#numerador-6-digitos{
+  width: 120px;
 }
 
 @media (min-width: 768px) { 
