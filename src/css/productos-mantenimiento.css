@@ -49,9 +49,13 @@
 }
 
 #btn-img1{
-  filter: grayscale(0%);
+  filter: grayscale(100%);
   cursor: pointer;
   width: 300px;
+}
+
+#btn-img1:hover{
+  filter: grayscale(0%);
 }
 
 #btn-img2{
@@ -71,18 +75,18 @@
 }
 
 #btn-img3:hover{
+  width: 260px;
   filter: grayscale(0%);
+  cursor: pointer;
 }
+
+
 
 #btn-img4{
   width: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   cursor: pointer;
   margin-top: 2rem;
-}
-
-#btn-img4:hover{
-  filter: grayscale(0%);
 }
 
 @media (max-width: 1024px) { 
@@ -109,8 +113,6 @@
   }
 }
 
-
-/*grilla productos*/
 
 .productos-grid {
   display: grid;

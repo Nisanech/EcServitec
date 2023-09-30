@@ -112,6 +112,20 @@ p {
   width: 2rem;
 }
 
+.barra-telefono p{
+  display: flex;
+  gap: 1rem;
+}
+
+.barra-telefono a{
+  color: #383838;
+  text-decoration:underline;
+}
+
+.barra-telefono a:hover{
+  color: white;
+}
+
 .barra-redes {
   display: flex;
   align-items: center;
@@ -161,8 +175,8 @@ p {
   justify-content: space-between;
 }
 
-.header-logo {
-  width: 30rem;
+.logo{
+  width: 340px;
 }
 
 .header-navegacion {
@@ -177,7 +191,7 @@ p {
 .header-navegacion a {
   font-family: var(--fuenteTextos);
   font-weight: regular;
-  font-size: 14px;
+  font-size: 20px;
   color: var(--negro);
   cursor: pointer;
 }
@@ -210,7 +224,7 @@ p {
     flex-direction: row;
   }
   .header-logo {
-    width: 20rem;
+    height: 100%;
   }
 
   .header-navegacion {
@@ -272,6 +286,8 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-telefonos h4,
@@ -315,13 +331,13 @@ p {
   }
 }
 
-.copy {
+.copy{
   display: flex;
-  flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  background-color: var(--negro);
+  justify-content: end;
+  padding: 1rem 0;
+  background-color: #313030;
 }
 
 .copy p,
