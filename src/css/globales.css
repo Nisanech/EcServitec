@@ -118,7 +118,7 @@ p {
 }
 
 .barra-telefono a{
-  color: #383838;
+  color: var(--blanco);
   text-decoration:underline;
 }
 
