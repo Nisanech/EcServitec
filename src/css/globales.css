@@ -221,6 +221,10 @@ p {
   font-weight: bold;
 }
 
+.enlace-pedido {
+  text-transform: capitalize;
+}
+
 @media (min-width: 768px) { 
   .header {
     flex-direction: row;

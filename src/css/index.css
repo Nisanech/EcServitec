@@ -19,23 +19,24 @@
   background-color: var(--grisClaro);
 }
 
-.nuestros-servicios-headig{
+.nuestros-servicios-headig {
   margin: 2rem 0 0 0;
   text-align: center;
   font-family: var(--fuenteTitulo);
   font-weight: 400;
   color: var(--negro);
+  font-size: 30px;
 }
 
-.nuestros-servicios-headig h2{
+/* .nuestros-servicios-headig h2{
   font-size: 50px;
-}
+} */
+
+
 
 .nuestros-servicios-headig span {
   color: var(--naranja);
-  font-family: var(--fuenteTitulo);
   font-weight: 700;
-  font-size: 30px;
 }
 
 .nuestros-servicios-cards {
@@ -75,9 +76,9 @@
 }
 
 @media (min-width: 1024px) {
-  .nuestros-servicios-headig {
+  /* .nuestros-servicios-headig {
     font-size: 24px;
-  }
+  } */
 
   .nuestros-servicios-cards {
     grid-template-columns: repeat(4, 1fr);
