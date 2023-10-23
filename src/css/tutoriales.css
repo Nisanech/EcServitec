@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 :root {
-  --fuenteTitulo: 'Manrope', sans-serif;
+  --fuenteTitulo: 'Young Serif', serif;
   --fuenteTextos: 'Manrope', sans-serif;
 
   --colorPrincipal: #F58634;
@@ -18,12 +18,13 @@ body{
   background-color: #f0f0f0;
 }
 
-main h3{
+main h1{
   font-family: var(--fuenteTitulo);
   font-weight: 700;
   color: var(--colorPrincipal);
   font-size: 30px;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .grid-tutoriales{

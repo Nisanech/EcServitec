@@ -1,5 +1,5 @@
 :root {
-  --fuenteTitulo: 'Libre Franklin', sans-serif;
+  --fuenteTitulo: 'Young Serif', serif;
   --fuenteTextos: 'Open Sans', sans-serif;
 
   --naranja: #F58634;
@@ -28,6 +28,8 @@ body {
 h1,
 h2 {
     font-weight: 700;
+    font-family: var(--fuenteTitulo);
+    text-transform: uppercase;
 }
 
 h1 {
