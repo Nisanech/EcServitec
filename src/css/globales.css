@@ -22,7 +22,8 @@ body {
   font-family: var(--fuenteTextos);
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: var(--blanco);
+  background-color: transparent;
+  width: 100%;
 }
 
 h1,
@@ -207,7 +208,7 @@ p {
 
 /** Header & Navegacion **/
 .header {
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 2rem 1rem;
   background-color: #f0f0f0;

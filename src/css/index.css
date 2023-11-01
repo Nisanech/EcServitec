@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 :root {
-  --fuenteTitulo: 'Young Serif', serif;
-  --fuenteTextos: 'Manrope', sans-serif;
+  --fuenteTitulo: "Young Serif", serif;
+  --fuenteTextos: "Manrope", sans-serif;
 
-  --naranja: #F58634;
+  --naranja: #f58634;
   --negro: #515151;
-  --blanco: #FFFFFF;
-  --gris: #7D7D7D;
-  --grisClaro: #F0F0F0;
+  --blanco: #ffffff;
+  --gris: #7d7d7d;
+  --grisClaro: #f0f0f0;
 }
 
 /** Nuestros Servicios **/
@@ -31,8 +31,6 @@
 /* .nuestros-servicios-headig h2{
   font-size: 50px;
 } */
-
-
 
 .nuestros-servicios-headig span {
   color: var(--naranja);
@@ -62,14 +60,14 @@
   height: 9rem;
 }
 
-.card-servicio p{
+.card-servicio p {
   font-size: 13px;
   font-family: var(--fuenteTextos);
   font-weight: 700;
   text-align: center;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .nuestros-servicios-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -119,14 +117,11 @@
   font-size: 22px;
 }
 
-#comercial{
+#comercial {
   color: var(--naranja);
   font-size: 30px;
-  text-shadow: 0px 0px 4px #FFFFFF,
-                1px 1px 3px #FFFFFF,
-                -1px -1px 3px #FFFFFF,
-                1px -1px 3px #FFFFFF,
-                -1px 1px 3px #FFFFFF  
+  text-shadow: 0px 0px 4px #ffffff, 1px 1px 3px #ffffff, -1px -1px 3px #ffffff,
+    1px -1px 3px #ffffff, -1px 1px 3px #ffffff;
 }
 
 .realiza-tu-pedido-cards {
@@ -158,7 +153,7 @@
   gap: 1rem;
 }
 
-.card-pedido-txt h3{
+.card-pedido-txt h3 {
   margin: 0;
   text-align: center;
   font-family: var(--fuenteTitulo);
@@ -166,7 +161,7 @@
 }
 
 .card-pedido-txt p {
-  font-family:  var(--fuenteTextos);
+  font-family: var(--fuenteTextos);
   font-weight: 400;
   color: var(--blanco);
   text-align: center;
@@ -262,7 +257,7 @@
   padding-top: 1rem;
   padding-left: 4rem;
   padding-right: 3rem;
-  box-shadow: -4px -3px 5px 0px rgba(0, 0, 0, 0.15);; 
+  box-shadow: -4px -3px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .siguenos-redes img {
@@ -270,14 +265,13 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .realiza-siguenos {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
   }
 }
-
 
 .nuestros-productos {
   width: 100%;
@@ -304,7 +298,7 @@
 
 /** Nuestros Productos **/
 
-.productos-container{
+.productos-container {
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -335,7 +329,8 @@
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -350,30 +345,25 @@
   transform: rotateY(180deg);
 }
 
-.flip-card h1{
-  color: #F58634;
+.flip-card h1 {
+  color: #f58634;
   font-size: 30px;
   margin: 2rem;
 }
 
-
-
-.btn-ver-productos_container{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 3rem;
+.btn-ver-productos_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .ver-productos {
   margin-top: 3rem;
   background-color: var(--naranja);
   color: var(--blanco);
   cursor: pointer;
-  max-width: 500px;
+  max-width: 300px;
 }
-
 
 .ver-productos:hover {
   background-color: var(--blanco);
@@ -381,19 +371,14 @@ margin: 3rem;
   outline: 2px solid var(--naranja);
 }
 
-
-@media (max-width: 1024px) { 
-  .productos-container{
+@media (max-width: 1024px) {
+  .productos-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-
-
-
-
 
 /** Valores **/
 .nuestros-valores {
@@ -430,15 +415,15 @@ margin: 3rem;
 
 .valor-card:nth-child(1),
 .valor-card:nth-child(3) {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .valor-card:nth-child(2) {
-  background-color: #DEDEDE;
+  background-color: #dedede;
   flex-direction: row-reverse;
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .nuestros-valores-cards {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -452,41 +437,40 @@ margin: 3rem;
   }
 }
 
-@media (max-width: 1024px){
-  .realiza-pedido-btn{
+@media (max-width: 1024px) {
+  .realiza-pedido-btn {
     margin-left: 0rem;
   }
 
-  .realiza-siguenos{
+  .realiza-siguenos {
     flex-direction: column;
   }
 
-  .siguenos-redes{
+  .siguenos-redes {
     margin-top: 3rem;
   }
 }
 
-@media (max-width: 767px){
-  .siguenos{
+@media (max-width: 767px) {
+  .siguenos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .siguenos p{
+  .siguenos p {
     margin-top: 5rem;
   }
 
-  .realiza-siguenos{
+  .realiza-siguenos {
     justify-content: center;
     align-items: center;
   }
 
-  .siguenos-redes{
+  .siguenos-redes {
     margin-top: 1rem;
   }
 }
-
 
 .clientes {
   width: 100%;
@@ -503,7 +487,7 @@ margin: 3rem;
   gap: 2rem;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .clientes__lista {
     display: flex;
     align-items: center;
@@ -511,4 +495,3 @@ margin: 3rem;
     padding: 0 2rem;
   }
 }
-
