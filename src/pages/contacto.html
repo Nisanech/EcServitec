@@ -23,43 +23,87 @@
 </head>
 <body>
   
+  <!--* Barra *-->
   <div class="barra">
     <!-- Contacto -->
     <div class="barra-contacto">
       <div class="barra-telefono">
-        <img
-          src="../assets/svg/generales/phone-icono.svg"
-          alt="Icono telefono"
-        />
+        <a
+          href="https://api.whatsapp.com/send?phone=573153460098&text=Hola!%20Quisiera%20recibir%20mas%20informaci%C3%B3n%20sobre%20los%20productos%20que%20tienen%20en%20su%20pagina%20web"
+          ><img
+            src="../assets/svg/generales/phone-icono.svg"
+            alt="Icono telefono"
+        /></a>
 
-        <p>315 346 0098 <a href="./contacto.html">Solicite su Cotización</a></p>
+        <p id="numero-telefono">
+          315 346 0098
+          <a href="./pages/contacto.html">Solicite su Cotización</a>
+        </p>
       </div>
 
-      <p class="hidden">info@ecservitec.com</p>
+      <p class="info-email">info@ecservitec.com</p>
     </div>
 
     <!-- Redes -->
     <div class="barra-redes">
-      <a href="https://www.facebook.com/profile.php?id=100066679116200" target="_blank"><img
-        src="../assets/svg/redes-sociales/facebook-logo.svg"
-        alt="Logo Facebook"
+      <a
+        href="https://www.facebook.com/profile.php?id=100066679116200"
+        target="_blank"
+        ><img
+          src="../assets/svg/redes-sociales/facebook-logo.svg"
+          alt="Logo Facebook"
       /></a>
 
-      <a href="https://www.instagram.com/ecservitec1a/" target="_blank"><img
-        src="../assets/svg/redes-sociales/instagram-logo.svg"
-        alt="Logo Instagram"
+      <a href="https://www.instagram.com/ecservitec1a/" target="_blank"
+        ><img
+          src="../assets/svg/redes-sociales/instagram-logo.svg"
+          alt="Logo Instagram"
       /></a>
 
-      <a href="https://www.youtube.com/@ecservitec7021" target="_blank"><img
-        src="../assets/svg/redes-sociales/youtube-logo.svg"
-        alt="Logo YouTube"
+      <a href="https://www.youtube.com/@ecservitec7021" target="_blank"
+        ><img
+          src="../assets/svg/redes-sociales/youtube-logo.svg"
+          alt="Logo YouTube"
       /></a>
 
-      <a href="https://www.tiktok.com/@gerenciaservitec?is_from_webapp=1&sender_device=pc" target="_blank"><img
-        src="../assets//svg/redes-sociales/tiktok-logo.svg"
-        alt="Logo TikTok"
+      <a
+        href="https://www.tiktok.com/@gerenciaservitec?is_from_webapp=1&sender_device=pc"
+        target="_blank"
+        ><img
+          src="../assets/svg/redes-sociales/tiktok-logo.svg"
+          alt="Logo TikTok"
       /></a>
     </div>
+  </div>
+
+  <!--Redes responsive-->
+
+  <div class="redes-responsive_container">
+    <a
+      href="https://www.facebook.com/profile.php?id=100066679116200"
+      target="_blank"
+      ><img
+        src="../assets/svg/redes-sociales/facebook-logo.svg"
+        alt="Logo Facebook"
+    /></a>
+
+    <a href="https://www.instagram.com/ecservitec1a/" target="_blank"
+      ><img
+        src="../assets/svg/redes-sociales/instagram-logo.svg"
+        alt="Logo Instagram"
+    /></a>
+
+    <a href="https://www.youtube.com/@ecservitec7021" target="_blank"
+      ><img
+        src="../assets/svg/redes-sociales/youtube-logo.svg"
+        alt="Logo YouTube"
+    /></a>
+
+    <a
+      href="https://www.tiktok.com/@gerenciaservitec?is_from_webapp=1&sender_device=pc"
+      target="_blank"
+      ><img src="../assets/svg/redes-sociales/tiktok-logo.svg" alt="Logo TikTok"
+    /></a>
   </div>
 
   <!--* Header *-->
@@ -72,10 +116,12 @@
     <!--* Navegacion *-->
     <nav class="header-navegacion">
       <a href="../index.html">Inicio</a>
-      <a href="../pages/productos.html">Productos</a>
-      <a href="../pages/tutoriales.html" >Tutoriales</a>
-      <a href="../pages/contacto.html" class="activo">Contacto</a>
-      <a href="../pages/contacto.html" class="enlace-pedido">Reparamos tu máquina</a>
+      <a href="productos.html">Productos</a>
+      <a href="tutoriales.html">Tutoriales</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+      <a href="contacto.html" class="enlace-pedido"
+        >Reparamos tu máquina</a
+      >
     </nav>
   </header>
 
@@ -105,7 +151,7 @@
 
             <input id="button-submit" type="submit" value="Enviar">
 
-            <input type="hidden" name="_next" value="https://pool-landing.vercel.app/pages/contacto.html">
+            <input type="hidden" name="_next" value="https://www.ecservitec.com/pages/contacto.html">
             <input type="hidden" name="_captcha" value="false">
         </div>
     </form>
@@ -115,7 +161,7 @@
   <!--* Footer *-->
   <footer class="footer">
     <div class="banner-footer">
-      <img src="assets/img/banners/banner-footer.jpg" alt="Banner footer" id="bannerFooter">
+      <img src="../assets/img/banners/banner-footer.jpg" alt="Banner footer" id="bannerFooter">
     </div>
 
     <div class="footer-contacto contenedor">
@@ -186,6 +232,6 @@
   </footer>
 
   <!-- App js -->
-  <script src="../js/app.js"></script>
+  <!-- <script src="../js/app.js"></script> -->
 </body>
 </html>
